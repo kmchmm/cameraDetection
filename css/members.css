@@ -1,0 +1,559 @@
+.second-section-container{
+    overflow: visible;
+}
+.block{
+    display: block;
+}
+
+.member-box{
+    max-width: 100%;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px 0px #00000033;
+    height: auto;
+    background-color: #ffffff;
+    padding: 2em 1em;
+}
+
+/***********************************/
+/**************BUTTONS**************/
+/***********************************/
+
+.member-box button{
+    max-width: 100%;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
+}
+
+
+.add-button{
+    background-color: #013237;
+    border: 1px solid #013237;
+    margin-bottom: 2em;
+    width: 9em;
+}
+
+.add-button i{
+    margin-right: 5px;
+}
+
+.show-button{
+    background-color: #4CA771;
+    border: 1px solid #4CA771;
+    width: 100%;
+    margin: .2em 0;
+}
+.edit-button{
+    background-color: #457b9d;
+    border: 1px solid #457b9d;
+    width: 100%;
+    margin: .2em 0;
+}
+
+.del-button{
+    background-color: #ff6e4a;
+    border: 1px solid #ff6e4a;
+    width: 100%;
+    margin: .2em 0;
+}
+
+.action-buttons{
+    border: none;
+}
+
+
+/***********************************/
+/***************MODAL***************/
+/***********************************/
+.modal, .edit-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 25px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+  /* Modal Content */
+.modal-content, .edit-modal-content, .show_modal_content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+.show_modal_content{
+    width: 50%;
+    padding-bottom: 3em;
+}
+.show_modal_content span{
+    font-weight: 700;
+}
+.show-modal-content-divs{
+    gap: 5em;
+    margin-top: 2em;
+}
+.modal-content h1, .edit-modal-content h1, .show_modal_content h1{
+    color: #013237;
+    font-size: 2em;
+}
+  /* The Close Button */
+.close, .edit-close, .show-close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus,
+.edit-close:hover,
+.edit-close:focus,
+.show-close:hover,
+.show-close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-form, .edit-form{
+    flex-direction: column;
+    margin-top: 1em;
+}
+.add-modal-column{
+    flex-direction: column;
+    max-width: 100%;
+    width: 48%;
+}
+.add-modal-column input[type="text"]{
+    width: 100%;
+}
+.add-form label{
+    font-weight: 700;
+    color: #013237;
+    margin-bottom: .2em;
+}
+.add-form input{
+    margin-bottom: .5em;
+}
+.add-form input[type="text"]{
+    font-size: .9rem;
+    padding: .5em;
+    border: 1px solid #013237;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+input:focus::placeholder, .add-form textarea:focus::placeholder{
+    color: transparent;
+}
+input:focus, .add-form textarea:focus{
+    outline: none !important;
+}
+
+.add-form textarea{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #013237;
+    border-radius: 2px;
+    padding: .5em;
+}
+
+.image-container{
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+.image-container div:last-child{
+    width: 100%;
+}
+#profileDisplay{
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+}
+#file{
+    display: none;
+}
+
+.file-label, .edit-file-label{
+    padding: 1em .5em;
+    background-color: #013237;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+}
+.file-label i{
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.add-form button{
+    max-width: 100%;
+    width: 15%;
+    color: #ffffff;
+    border: 1px solid;
+    background-color: #4CA771;
+    margin-top: 2em;
+}
+
+.add-form button:hover{
+    background-color: #588157;
+}
+
+input[type="date"]{
+    font-size: .9rem;
+    padding: .45em;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #013237;
+}
+
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    background-color: #ffffff;
+}
+/**************DROPDOWN*************/
+
+select{
+    padding: .5em;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+
+.custom-select {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1rem;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #013237;
+    color: #ffffff;
+    padding: 8px .5em;
+    border: 1px solid transparent;
+    border-color: #013237;
+    cursor: pointer;
+    user-select: none;
+    letter-spacing: .1rem;
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #ffffff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #ffffff transparent;
+    top: 13px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div{
+    color: #ffffff;
+    padding: 8px .5em;
+    border: 1px solid transparent;
+    border-color: transparent transparent #013237 transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #013237;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+/***********************************/
+/**************MESSAGES*************/
+/***********************************/
+
+.container-fluid{
+    max-width: 100%;
+    width: 100%;
+}
+
+.success-upload{
+    background-color: #80ed99;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+.status-upload{
+    background-color: #ffc8dd;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+.fail-upload{
+    background-color: #ffafcc;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+/***********************************/
+/***************TABLE***************/
+/***********************************/
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+
+}
+
+table, th, td {
+    border: 1px solid #cac8c8;
+}
+.td-image{
+    width: 150px;
+    height: 150px;
+}
+
+td:last-child{
+    border: 1px solid #cac8c8;
+}
+th{
+    padding: .8em 0;
+    color: #013237;
+}
+td{
+    padding: 1em;
+    overflow: visible;
+}
+
+
+table img{
+    padding: 5px 0;
+    object-fit: cover;
+}
+
+
+/*****************************************/
+/***************STAFF MODAL***************/
+/*****************************************/
+.staff-info{
+    max-width: 100%;
+    width: 100%;
+}
+.staff-info div{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+
+.second-content-divs{
+    width: 100%;
+}
+/*********************************************************/
+/******************** MEDIA QUERIES **********************/
+/*********************************************************/
+
+/***************/
+/* laptops */
+/***************/
+
+@media screen and (max-width: 1919px) and (max-height: 1080px) {
+    .edit-button, .del-button{
+        width: 100%;
+        margin: .2em 0;
+    }
+}
+
+@media screen and (max-width: 1825px) and (max-height: 1080px){
+    .edit-button, .del-button{
+        width: 100%;
+        margin: .2em 0;
+    }
+}
+
+
+@media screen and (max-width: 1600px) and (max-height: 1080px){
+    .show-button, .edit-button, .del-button{
+        width: 100%;
+        margin: .2em 0;
+    }
+
+}
+
+@media screen and (max-width: 1600px) and (max-height: 900px){
+    .show-button, .edit-button, .del-button{
+        width: 100%;
+        margin: .2em 0;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1369px){
+    .member-box{
+        width: 100%;
+    }
+    .show-button, .edit-button, .del-button{
+        width: 100%;
+        margin: .2em 0;
+    }
+    .modal{
+        padding-top: 0;
+    }
+    .modal-content{
+        width: 80%;
+    }
+    .td-image{
+        width: 110px;
+        height: 110px;
+    }
+    td{
+        padding: .5em;
+    }
+    .member-box button{
+        font-size: .8rem;
+    }
+    .show-modal-content-divs{
+        gap: 2em;
+        margin-top: 2em;
+    }
+}
+
+/***************/
+/* laptops */
+/***************/
+@media (max-width: 1023px){
+
+    .modal-content, .show_modal_content {
+        width: 95%;
+    }
+    .show-modal-content{
+        width: 70%;
+    }
+    .td-image{
+        width: 100px;
+        height: 100px;
+    }
+    tbody>tr>td:nth-child(4){
+        display: none;
+    }
+    thead>tr>th:nth-child(4){
+        display: none;
+    }
+    
+}
+
+
+/***************/
+/* bigger phones */
+/***************/
+@media (max-width: 767px){
+    .add-form button, .edit-form button{
+        width: 30%;
+    }
+    .show-modal-content{
+        width: 90%;
+    }
+    .td-image{
+        width: 120px;
+        height: 120px;
+    }
+    tbody>tr>td:nth-child(3){
+        display: none;
+    }
+    thead>tr>th:nth-child(3){
+        display: none;
+    }
+    tbody>tr>td:nth-child(4){
+        display: none;
+    }
+    thead>tr>th:nth-child(4){
+        display: none;
+    }
+    td{
+        padding: .5em;
+    }
+    .member-box button{
+        font-size: .8rem;
+    }
+
+    .show-modal-content-divs{ 
+        margin-top: 2em;
+        padding: 0 0 2em 1em;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .first-content-divs{
+        width: 100%;
+
+    }
+    .second-content-divs{
+        width: 100%;
+    }
+}
+
+/***************/
+/* small phones */
+/***************/
+@media (max-width: 480px){
+
+
+
+} 
+@media (max-width:479px){
+    .member-box button{
+        font-size: .7rem;
+    }
+
+    .td-image{
+        width: 110px;
+        height: 110px;
+    }
+    tbody>tr>td:nth-child(2){
+        display: none;
+    }
+    thead>tr>th:nth-child(2){
+        display: none;
+    }
+}
+ 

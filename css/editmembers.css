@@ -1,0 +1,239 @@
+
+.members-edit-container{
+    max-width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #013237;
+}
+
+.edit-members-container{
+    max-width: 100%;
+    margin: auto;
+    width: 70%;
+    box-shadow: 0 3px 10px 0px #00000033;
+    height: auto;
+    padding: 2em;
+    font-family: 'Poppins', sans-serif;  
+    background-color: #ffffff;
+}
+
+.edit-members-container h1{
+    color: #013237;
+    font-size: 2em;
+}
+.close{
+    color: #6d6d6d;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-modal-column{
+    flex-direction: column;
+    max-width: 100%;
+    width: 48%;
+}
+.add-modal-column input[type="text"]{
+    width: 100%;
+}
+
+.edit-form{
+    flex-direction: column;
+
+}
+.edit-form label{
+    font-weight: 700;
+    color: #013237;
+    margin-bottom: .2em;
+}
+.edit-form input{
+    margin-bottom: .5em;
+}
+.edit-form input[type="text"]{
+    font-size: .9rem;
+    padding: .5em;
+    border: 1px solid #013237;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+input:focus::placeholder, .edit-form textarea:focus::placeholder{
+    color: transparent;
+}
+input:focus, .edit-form textarea:focus{
+    outline: none !important;
+}
+
+.edit-form textarea{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #013237;
+    border-radius: 2px;
+    padding: .5em;
+}
+
+.edit-form input[type="file"]{
+    display: none;
+}
+.file-label{
+    padding: 1em .5em;
+    background-color: #013237;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    cursor: pointer;
+    align-items: center;
+    gap: 1em;
+}
+.file-label i{
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.edit-form button{
+    max-width: 100%;
+    width: auto;
+    color: #ffffff;
+    border: 1px solid;
+    background-color: #457b9d;
+    font-family: 'Poppins', sans-serif;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    border-radius: 3px;
+    margin: 2em 0 0 0;
+}
+.edit-form button:hover{
+    background-color: #013237;
+    border: 1px solid #013237;
+}
+
+.image-edit{
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+.image-edit div:last-child{
+    width: 100%;
+}
+
+.image-edit img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+input[type="date"]{
+    font-size: .9rem;
+    padding: .65em;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #013237;
+}
+
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    background-color: #ffffff;
+}
+/**************DROPDOWN*************/
+
+select{
+    padding: .5em;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+
+.custom-select {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #013237;
+    color: #ffffff;
+    padding: 8px .5em;
+    border: 1px solid transparent;
+    border-color: #013237;
+    cursor: pointer;
+    user-select: none;
+    letter-spacing: .1rem;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #ffffff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #ffffff transparent;
+    top: 13px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div{
+    color: #ffffff;
+    padding: 8px .5em;
+    border: 1px solid transparent;
+    border-color: transparent transparent #013237 transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #013237;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+/*********************************************************/
+/******************** MEDIA QUERIES **********************/
+/*********************************************************/
+
+
+  @media  screen and (max-width: 1023px){
+    .edit-members-container{
+        max-width: 100%;
+        width: 95%;
+        padding: 2em 1em;
+    }
+  }
